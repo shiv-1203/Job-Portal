@@ -1,7 +1,6 @@
 import React from 'react';
 import Profiledisp from './Profiledisp';
 import '../App.css';
-import '../logo.svg';
 import Theme from './theme';
 class Navbar extends React.Component{
     render(){

@@ -1,23 +1,14 @@
 import '../logo.svg'
-import React from "react";
+import React from "react"
 import '../App.css'
+import details from "./details"
 class Profiledisp extends React.Component{
     constructor(props) {
 		super(props);
 
 		this.state = {
-			items: [],
 			ishidden:true
 		};
-	}
-	componentDidMount() {
-		fetch("http://refertest.pythonanywhere.com/user/data")
-		.then((res) => res.json())
-		.then((json) => {
-			this.setState({
-				items: json.data
-			});
-		})
 	}
 	funcn(){
 		this.setState({
@@ -25,7 +16,7 @@ class Profiledisp extends React.Component{
 		})
 	}
 	render() {
-		const item1 = this.state.items;
+		const item1 = details.data;
         return(
             <div className="Profiledisp">
 			<img src={item1.pictureUrl} alt="Profile" className="img" onClick={this.funcn.bind(this)}/>

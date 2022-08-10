@@ -1,8 +1,6 @@
 import React from 'react';
 import '../App.css';
 import $ from 'jquery';
-import Content from './content.js';
-import Profiledisp from './Profiledisp.js';
 class Theme extends React.Component{
     constructor(props){
         super(props);
